@@ -1,0 +1,31 @@
+@keyframes ripple {
+  from {
+    opacity: .5;
+    width: 0
+  }
+
+  to {
+    opacity: 0;
+    width: 300%
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%)
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: none;
+  }
+
+  to {
+    transform: translateX(-200%)
+  }
+}
