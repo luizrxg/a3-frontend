@@ -1,8 +1,8 @@
 import * as React from 'react';
+import {useContext} from 'react';
 import './style.scss'
-import {useContext, useEffect, useState} from "react";
-import {Alert, Box, Snackbar} from "@mui/material";
-import {GlobalContext} from "../../../../../searchdevs/src/contexts/global";
+import {Alert, Snackbar} from "@mui/material";
+import {GlobalContext} from "../../../contexts/global";
 
 const CustomSnackbar = () => {
     const { message, setMessage } = useContext(GlobalContext)
@@ -12,7 +12,7 @@ const CustomSnackbar = () => {
           <Snackbar
             open
             message={message}
-            onClose={() => setMessage("")}
+            onClose={() => {}}
             autoHideDuration={6000}
           >
             <Alert severity="error">

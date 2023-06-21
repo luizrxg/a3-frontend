@@ -1,10 +1,10 @@
-# SearchDevs
+# a3
 
-SearchDevs é um projeto de pesquisa de perfis no GitHub, que utiliza a API de busca de usuário do próprio GitHub. Foi desenvolvido utilizando a linguagem TypeScript e as bibliotecas React, Sass, Material-UI, react-router-dom e Axios.
+a3 é um projeto de pesquisa de perfis no GitHub, que utiliza a API de busca de usuário do próprio GitHub. Foi desenvolvido utilizando a linguagem TypeScript e as bibliotecas React, Sass, Material-UI, react-router-dom e Axios.
 
 ## Descrição
 
-O SearchDevs é uma aplicação web que permite aos usuários pesquisar perfis de desenvolvedores no GitHub com base em critérios de busca, como nome de usuário, localização, tecnologias de interesse, entre outros. A aplicação utiliza a API de busca de usuário do GitHub para obter os resultados da pesquisa.
+O a3 é uma aplicação web que permite aos usuários pesquisar perfis de desenvolvedores no GitHub com base em critérios de busca, como nome de usuário, localização, tecnologias de interesse, entre outros. A aplicação utiliza a API de busca de usuário do GitHub para obter os resultados da pesquisa.
 
 ## Funcionalidades
 
@@ -23,7 +23,7 @@ O SearchDevs é uma aplicação web que permite aos usuários pesquisar perfis d
 
 $ git clone https://github.com/luizrxg/searchevs.git
 
-- Navegue até o diretório do projeto: cd searchdevs
+- Navegue até o diretório do projeto: cd a3
 - Instale as dependências: npm i --legacy-peer-deps
 - Inicie a aplicação: npm start
 - A aplicação estará disponível em http://localhost:3000.

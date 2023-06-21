@@ -1,5 +1,4 @@
 import axios from "axios";
-import ApiError from "../common/types/apierror";
 
 const api = axios.create({
     baseURL: "https://localhost:8080/",

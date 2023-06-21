@@ -1,7 +1,6 @@
-import React, {useEffect} from 'react';
-import {BrowserRouter, Navigate, Route, Routes, useLocation} from "react-router-dom";
+import React from 'react';
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./pages/home/home";
-import Profile from "./pages/profile/profile";
 
 const Router = () => {
 
@@ -9,8 +8,6 @@ const Router = () => {
         <BrowserRouter>
             <Routes>
                 <Route path="*" element={<Home/>}/>
-                <Route path="/home" element={<Home/>}/>
-                <Route path="/perfil" element={<Profile/>}/>
             </Routes>
         </BrowserRouter>
     )
