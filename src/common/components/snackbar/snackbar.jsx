@@ -12,7 +12,7 @@ const CustomSnackbar = () => {
           <Snackbar
             open
             message={message}
-            onClose={() => {}}
+            onClose={() => setMessage("")}
             autoHideDuration={6000}
           >
             <Alert severity="error">

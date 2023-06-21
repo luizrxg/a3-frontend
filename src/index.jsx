@@ -10,6 +10,7 @@ import GlobalProvider from './contexts/global';
 import Snackbar from "../../a3-frontend/src/common/components/snackbar/snackbar";
 
 import { purple } from '@mui/material/colors';
+import LoadingScreen from "./common/components/loading/loading";
 
 const theme = createTheme({
     palette: {
@@ -30,8 +31,9 @@ root.render(
     <ThemeProvider theme={theme}>
       <GlobalProvider>
         <Router/>
+        <Snackbar/>
+        <LoadingScreen/>
       </GlobalProvider>
-      <Snackbar/>
     </ThemeProvider>
   </React.StrictMode>
 );

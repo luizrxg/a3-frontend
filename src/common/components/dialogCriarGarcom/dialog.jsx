@@ -1,11 +1,12 @@
 import * as React from 'react';
 import {useContext, useState} from 'react';
 import './style.scss'
+import Button from "../button/button";
 import {GlobalContext} from "../../../contexts/global";
-import {Button, Dialog, TextField} from "@mui/material";
+import {Dialog, TextField} from "@mui/material";
 
 const CustomDialog = () => {
-    const { openCriarGarcom, setOpenCriarGarcom, criarGarcom } = useContext(GlobalContext)
+    const { openCriarGarcom, setOpenCriarGarcom, createGarcom } = useContext(GlobalContext)
     const [nome,           setNome          ] = useState("")
     const [cpf,            setCpf           ] = useState("")
     const [dataNascimento, setDataNascimento] = useState("")
@@ -26,7 +27,7 @@ const CustomDialog = () => {
                 <TextField fullWidth label="Sexo" value={sexo} onChange={(e) => setSexo(e.target.value)}/>
                 <TextField fullWidth label="Salário" value={salario} type="number" onChange={(e) => setSalario(e.target.value)}/>
                 <Button onClick={() => {
-                    criarGarcom({
+                    createGarcom({
                         id: 0,
                         nome: nome,
                         cpf: cpf,

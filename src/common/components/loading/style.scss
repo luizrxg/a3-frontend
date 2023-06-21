@@ -1,14 +1,14 @@
 @import "src/index";
 
-.dialog-container {
+.loading-screen {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
   width: 100%;
-  gap: .5rem;
-  padding: .5rem;
-  background: $secondaryColor;
-  min-width: 400px;
+  position: absolute;
+  background: #00000050;
+  left: 0;
+  top: 0;
 }
